@@ -65,6 +65,8 @@ library
                    , mtl-compat      >= 0.2.1
                    , semigroups
                    , data-default-class >= 0.0.1
+                   , template-haskell
+                   , th-lift-instances
   if flag(lib-Werror)
     ghc-options: -Werror
 
