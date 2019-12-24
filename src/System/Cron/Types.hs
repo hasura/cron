@@ -4,8 +4,6 @@
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
 {-# LANGUAGE OverloadedStrings          #-}
 {-# LANGUAGE RecordWildCards            #-}
-{-# LANGUAGE StandaloneDeriving         #-}
-{-# OPTIONS_GHC -fno-warn-orphans #-}
 module System.Cron.Types
     ( CronSchedule(..)
     , Crontab(..)
@@ -368,8 +366,6 @@ mkRangeField x y
   | x <= y    = Just (RangeField x y)
   | otherwise = Nothing
 
-
-deriving instance Lift a => Lift (NonEmpty a)
 
 -------------------------------------------------------------------------------
 data CronField = Field BaseField
