@@ -1,7 +1,8 @@
 resolver: lts-13.20
 packages:
 - '.'
-extra-deps: []
+extra-deps:
+  - time-1.9.3
 flags:
   cron:
     lib-Werror: true
